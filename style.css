@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root {
+    --c01: #000;
+    --c02: #fff;
+    --c03: #8a9094;
+    --c04: #d2dbe0;
+    --c05: rgb(222, 212, 232);
+    --logo-color: #8a9094; /* Substitua pelo código de cor da logo da FAETEC usando ColorZilla */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--c04);
+    display: flex;
+    align-items: center;
+}
+
+figure {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.logo {
+    width: 120px;
+    padding-left: 20px;
+}
+
+.nav-container {
+    display: inline-block;
+    float: right;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.menu li a {
+    color: var(--c02);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu li a:hover {
+    color: var(--logo-color);
+    background-color: var(--c04);
+}
+
+main {
+    min-height: 100vh;
+}
+
+.image-section {
+    background-color: var(--c03);
+    height: 5000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c02);
+}
+
+.image-section h1 {
+    font-size: 36px;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.image-section h1 span {
+    background-color: var(--c05);
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.content-section p {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--c04);
+}
